@@ -1,0 +1,527 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+.main{
+  width: 100%;
+  justify-content: center;
+  border: none;
+  border: none;
+  
+}
+
+.container ,.form-container{
+
+ display: flex;
+ flex-direction: row;
+ margin: 0 20%;
+ 
+  
+  
+  box-shadow:0 5px 20px 5px rgba(0,0,0,0.2);
+  position: relative;
+  border-radius: 10px;
+  height: 600px;
+  
+
+  padding: 5px;
+  justify-content: center;
+  
+  
+  
+
+}
+
+.close-btn{
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 1.5rem;
+  z-index: 1;
+  cursor:pointer ;
+}
+
+.form-left-side-content{
+  flex: 0.5;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+  background:linear-gradient(to right, #a8ff78, #78ffd6); 
+  animation: slideLeft 1.5s ease forwards;
+  animation-delay: 0.5s;
+  
+  
+ 
+}
+.left-side-content{
+  flex: 0.5;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+  background:linear-gradient(to right, #a8ff78, #78ffd6); 
+  animation: slideLeft 1.5s ease forwards;
+  animation-delay: 0.5s;
+  
+  
+}
+
+.left-side-content img{
+  width: 90%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  background:none;
+
+ 
+}
+.form-left-side-content img{
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  background: none;
+ 
+}
+
+.right-side-content{
+  flex: 0.5;
+  border-radius: 0 10px 10px 0;
+ 
+  
+  position: relative;
+  background:linear-gradient(to right, #232526, #414345);
+  animation: slideRight 1.5s ease forwards;
+  animation-delay: 0.5s;
+    
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translatex(-100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translatex(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    top:1000px;
+   
+    opacity: 0;
+  }
+
+  
+
+  100% {
+     
+     
+      opacity: 1;
+    }
+    
+}
+.form-content-right{
+  flex: 0.5;
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  background:linear-gradient(to right, #000000, #434343);
+  animation: slideRight 1.5s ease forwards;
+  animation-delay: 0.5s;
+  
+}
+.form-content-right h2{
+  color: white;
+}
+
+.form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+
+}
+.form h2{
+  font-size: 1rem;
+  text-align: start;
+  width: 80%;
+  
+  margin-bottom: 1rem;
+}
+.right-side-content h2{
+  background: none;
+  font-size: 1rem;
+  color: white;
+  font-family: sans-serif;
+ 
+  width: 80%;
+  margin: 30% 10%;
+  margin-bottom: 10%;
+  
+
+  text-align: center;
+}
+
+.right-side-content h2 span{
+  background: none;
+  color: cyan;
+}
+.right-side-content img{
+  width: 50%;
+  height: 50px;
+ background-color: #fff;
+}
+.form-inputs{
+  margin-bottom: 0.5rem;
+  width: 80%;
+  background:  none;
+
+}
+.form h2{
+  background: none;
+}
+
+.form-inputs p{
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
+.form-label{
+  display: inline;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: white;
+  background: none;
+ 
+}
+
+.form-input{
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  color: white;
+ 
+}
+
+.form-input::placeholder{
+  color: #9f9c9c;
+  font-size: 12PX;
+}
+
+.form-input-btn{
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background:linear-gradient(to right, #83f844, #0db986);
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  border: none;
+
+
+}
+.right-side-content button{
+  width: 60%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background:linear-gradient(to right, #a8ff78, #78ffd6); 
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  margin: 0 20%;
+  box-shadow:0 0 3px 2px  rgb(255, 255, 255);
+
+}
+
+.form-input-btn:hover{
+  cursor: pointer;
+}
+
+.form-input-login{
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #fff;
+  width: 88%;
+  text-align: center;
+  background: none;
+}
+
+.form-input-login a{
+  text-decoration: none;
+  color: #27cdff;
+  font-weight: 600;
+  background: none;
+}
+.right-bottom{
+background: none;
+  width: 60%;
+  height: 100px;
+  
+  border-radius: 2px;
+ 
+ 
+  color: white;
+  font-size: 1rem;
+ 
+  margin: 10% 20%;
+  text-align: center;
+ display: grid;
+ grid-template-rows: 1fr,1fr;
+ 
+}
+.right-bottom p{
+  background: none;
+}
+
+.link{
+  width: 100px;
+  height: 25px;
+  border-radius: 5px; 
+  margin: auto;
+  font-weight: 600;
+  color:rgb(0, 187, 255);
+
+ text-decoration: none;
+ background: aliceblue;
+
+ 
+
+}
+
+.link:hover{
+  box-shadow:0 5px 20px 5px rgb(255, 255, 255);;
+}
+.right-bottom p{
+  color: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+@media ( max-width:500px) {
+.main{
+  margin: 0;
+  position: relative;
+  
+}
+  .container{
+      width: 100%;
+      height: 450px;
+      margin:0% 1%;
+      margin-top: 10%;
+  }
+  .left-side-content,.form-left-side-content{
+    flex: 0.4;
+  }
+  .right-side-content,.form-content-right{
+    flex: 0.6;
+
+  }
+ 
+  .left-side-content img,.form-left-side-content img{
+      width:100%;
+      height: 75%;
+      position: relative;
+      padding-top: 10%;
+    
+     
+  }
+ 
+  .right-side-content h2 {
+      font-size: 12px;
+
+
+  }
+  .right-side-content{
+      padding-top: 10%;
+  }
+  .right-side-content button{
+      font-size: 10px;
+      width: 50%px;
+      height: 25px;
+      font-weight: 600;
+  }
+  .right-bottom .link{
+     
+      width: 80px;
+      height: 25px;
+      padding: 3px;
+      font-size: 15px;
+      
+
+  }
+  .right-bottom{
+      gap:0;
+      padding-top: 10px;
+  }
+ 
+  .form-container{
+      width: 100%;
+      
+      height: 500px;
+      
+      
+      margin: 0% 2% ;
+      margin-top: 10%;
+      border-radius: 10px;
+  
+
+  }
+  
+
+  .form-left-side-content img{
+      height: 40%;
+      width: 250%;
+  }
+  .form-input{
+      height: 20px;
+      width: 100%;
+      padding: 0 5px;
+
+
+  }
+  .form h2{
+      font-size: 15px;
+      text-align: center;
+
+  }
+  .form-input-btn{
+      height: 25px;
+      width: 90%;
+      margin-left: 10%;
+      
+
+  }
+  
+  
+ 
+}
+@media (max-width:400px){
+  .form-left-side-content{
+    display: none;
+  }
+  .form-content-right{
+    flex: 1.0;
+  }
+}
+@media(max-width:320px){
+  .left-side-content{
+    display: none;
+  }
+  .right-side-content,.form-content-right{
+    flex: 1.0;
+    margin: 0 1%;
+    justify-content: center;
+    
+  }
+  .right-bottom{
+     margin-left: 20%;
+     justify-content: center;
+  }
+}
+@media(min-width:500px){
+  .container,.form-container{
+    margin: 0;
+
+  }
+  .left-side-content,.form-left-side-content{
+    flex: 0.5;
+  }
+  .right-side-content,.form-content-right{
+    flex: 0.5;
+  }
+
+
+}
+@media (min-width:800px){
+  .container,.form-container{
+    margin: 0;
+
+  }
+  .left-side-content,.form-left-side-content{
+    flex: 0.5;
+  }
+  .right-side-content,.form-content-right{
+    flex: 0.5;
+  }
+}
+
+@media(min-width:1100px){
+  .container,.form-container{
+    margin: 0 5%;
+
+  }
+  .left-side-content,.form-left-side-content{
+    flex: 0.5;
+  }
+  .right-side-content,.form-content-right{
+    flex: 0.5;
+  }
+
+}
+
+@media(min-width:1500px){
+  .container,.form-container{
+    margin: 0 5%;
+
+  }
+  .left-side-content,.form-left-side-content{
+    flex: 0.5;
+  }
+  .right-side-content,.form-content-right{
+    flex: 0.5;
+  }
+
+}
+
+@media(min-width:1800px){
+  .container,.form-container{
+    margin: 0 5%;
+
+  }
+  .left-side-content,.form-left-side-content{
+    flex: 0.5;
+  }
+  .right-side-content,.form-content-right{
+    flex: 0.5;
+  }
+
+}
+
+
+
+

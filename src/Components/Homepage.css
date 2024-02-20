@@ -1,0 +1,45 @@
+.homepage{
+    display: flex;
+    flex-direction: row;
+    background: #000;
+
+}
+
+.homepage-nav{
+    flex: 0.2;
+}
+.homepage-timeline{
+    flex: 0.8;
+}
+
+
+@media (max-width:400px){
+  .homepage-nav{
+    display: none;
+  }
+  .homepage-timeline{
+    width: 100%;
+  }
+  }
+
+  @media(max-width:720px){
+    .homepage-nav{
+        display: none;
+    }
+    .homepage-timeline{
+        width: 100%;
+        flex: 1.0;
+        padding: 3%;
+    }
+  }
+
+  @media(max-width:900px){
+    .homepage-nav{
+        width: 50px;
+        flex: 0.1;
+    }
+    .homepage-timeline{
+        flex: 1.0;
+        width: 80%;
+    }
+  }
